@@ -26,7 +26,7 @@
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
-                    <form method="POST" action="<?= site_url('admin/J_batikan/tambah_aksi/'); ?>" role="form">
+                    <form method="POST" action="<?= base_url('simpanpenduduk') ?>" role="form">
                         <div class="row">
                             <div class="col-sm-6">
                                 <!-- text input -->
@@ -86,7 +86,6 @@
 
                             </div>
                             <div class="col-sm-6">
-                                <!-- select -->
                                 <div class="form-group">
                                     <label>AGAMA</label>
                                     <select name="agama" class="form-control">
@@ -106,9 +105,10 @@
                                     <label>GOLONGAN DARAH</label>
                                     <select name="goldar" class="form-control">
                                         <option value="">-- Pilih Golongan Darah</option>
-                                        <?php foreach ($goldar as $x) { ?>
-                                            <option value="<?= $x->goldar ?>"><?= $x->goldar ?></option>
-                                        <?php }  ?>
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="O">O</option>
+                                        <option value="AB">AB</option>
                                     </select>
                                 </div>
                             </div>
@@ -118,46 +118,61 @@
                                     <label>STATUS PERKAWINAN</label>
                                     <select name="stkawin" class="form-control">
                                         <option>-- Pilih Status Perkawinan</option>
-                                        <?php foreach ($stkawin as $x) { ?>
-                                            <option value="<?= $x->kawin ?>"><?= $x->kawin ?></option>
-                                        <?php } ?>
+                                        
+                                        <option value="Sudah Menikah">Sudah Menikah</option>
+                                        <option value="Lajang">Lajang</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <!-- text input -->
                                 <div class="form-group">
-                                    <label>NAMA AYAH</label>
-                                    <input type="text" name="nama_ayah" class="form-control" placeholder="Nama Ayah" required>
+                                    <label>KECAMATAN</label>
+                                    <input type="text" name="kecamatan" class="form-control" placeholder="Kecamatan" required>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label>NAMA IBU</label>
-                                    <input type="text" name="nama_ibu" class="form-control" placeholder="Nama Ibu" required>
+                                    <label>NAGARI</label>
+                                    <input type="text" name="nagari" class="form-control" placeholder="Nagari" required>
                                 </div>
                             </div>
+                            <div class="col-sm-6">
+                                <!-- text input -->
+                                <div class="form-group">
+                                    <label>JORONG</label>
+                                    <input type="text" name="jorong" class="form-control" placeholder="Jorong" required>
+                                </div>
+                            </div>
+                            
                             <div class="col-sm-6">
                                 <!-- select -->
                                 <div class="form-group">
                                     <label>PEKERJAAN</label>
                                     <select name="kerja" class="form-control">
                                         <option>-- Pilih Pekerjaan</option>
-                                        <?php foreach ($kerja as $x) { ?>
-                                            <option value="<?= $x->kerja ?>"><?= $x->kerja ?></option>
-                                        <?php  } ?>
+                                        <option value="Pegawai">Pegawai</option>
+                                        <option value="Wirausaha">Wirausaha</option>
+                                        <option value="Pelajar">Pelajar</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <!-- select -->
                                 <div class="form-group">
-                                    <label>PENDIDIKAN</label>
-                                    <select name="pendidikan" class="form-control">
-                                        <option>-- Pilih pendidikan</option>
-                                        <?php foreach ($pendidikan as $x) { ?>
-                                            <option value="<?= $x->pendidikan ?>"><?= $x->pendidikan ?></option>
-                                        <?php } ?>
+                                    <label>Kewarganegaraan</label>
+                                    <input type="text" class="form-control" name="kewarganegaraan" placeholder="Kewarganegaraan">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>STATUS DALAM KELUARGA</label>
+                                    <select name="status" class="form-control" id="">
+                                        <option value="">--Status</option>
+                                        <option value="Ayah">Ayah</option>
+                                        <option value="Ibu">Ibu</option>
+                                        <option value="Anak">Anak</option>
                                     </select>
                                 </div>
                             </div>
@@ -170,6 +185,7 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     </form>
                 </div>
             </div>

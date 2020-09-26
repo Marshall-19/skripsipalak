@@ -90,71 +90,12 @@
                     </ul>
                 </li>
                 <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
+                    <a href="<?= base_url('penduduk') ?>" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
                         <p>
                             Data Penduduk
-                            <i class="fas fa-angle-left right"></i>
-                            <span class="badge badge-info right"></span>
                         </p>
                     </a>
-
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="<?= site_url('admin/J_bulian') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Jorong Bulian</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="<?= site_url('admin/J_batikan') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Jorong Batikan</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="<?= site_url('admin/J_simpang') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Jorong Simpang Tigo</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="<?= site_url('admin/J_kapalo') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Jorong Kapalo Koto</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="<?= site_url('admin/J_galugu') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Jorong Sungai Galugu</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="<?= site_url('admin/J_pasar') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Jorong Pasar</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="<?= site_url('admin/J_harapan') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Jorong Harapan Baru</p>
-                            </a>
-                        </li>
-                    </ul> -->
                 </li>
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
@@ -215,3 +156,12 @@
     </div>
     <!-- /.sidebar -->
 </aside>
+
+<?php
+if( $this->session->flashdata('pesan') == TRUE)
+{
+    echo "
+        <script>alert(".$this->session->flashdata('pesan').")</script>
+    ";
+}
+?>
