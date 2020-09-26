@@ -19,143 +19,41 @@
                             <i class=""></i>
                         </p>
                     </a>
-                    <a href="<?= base_url('admin/Profil') ?>" class="nav-link">
-                        <i class="nav-icon fas fa-tv"></i>
-                        <p>
-                            Profil Nagari
-                            <i class=""></i>
-                        </p>
-                    </a>
-                    <a href="<?= base_url('admin/Data_admin') ?>" class="nav-link">
-                        <i class="nav-icon fas fa-user"></i>
-                        <p>
-                            Data Administrator
-                            <i class=""></i>
-                        </p>
-                    </a>
-                </li>
 
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
+                    <a href="<?= base_url('') ?>" class="nav-link">
                         <i class="nav-icon fas fa-book"></i>
                         <p>
-                            Data Master
-                            <i class="fas fa-angle-left right"></i>
-                            <span class="badge badge-info right"></span>
+                            Data Penduduk
                         </p>
                     </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="<?= site_url('admin/Data_agama') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Data Agama</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?= site_url('admin/Data_goldar') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Data Golongan Darah</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?= site_url('admin/Data_pendidikan') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Data Pendidikan</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?= site_url('admin/Data_kerja') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Data Pekerjaan</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?= site_url('admin/Data_kawin') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Data Status Kawin</p>
-                            </a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a href="<?= site_url('admin/Data_profil') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Data Profil</p>
-                            </a>
-                        </li> -->
-                        <!-- <li class="nav-item">
-                            <a href="<?= site_url('admin/Data_jorong') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Data Jorong</p>
-                            </a>
-                        </li> -->
-                    </ul>
-                </li>
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
+                    <a href="<?= base_url('') ?>" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
                         <p>
-                            Data Penduduk
-                            <i class="fas fa-angle-left right"></i>
-                            <span class="badge badge-info right"></span>
+                            Data Keluarga
                         </p>
                     </a>
-
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="<?= site_url('admin/J_bulian') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Jorong Bulian</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="<?= site_url('admin/J_batikan') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Jorong Batikan</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="<?= site_url('admin/J_simpang') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Jorong Simpang Tigo</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="<?= site_url('admin/J_kapalo') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Jorong Kapalo Koto</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="<?= site_url('admin/J_galugu') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Jorong Sungai Galugu</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="<?= site_url('admin/J_pasar') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Jorong Pasar</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="<?= site_url('admin/J_harapan') ?>" class="nav-link">
-                                <i class="fas fa-database"></i>
-                                <p>Jorong Harapan Baru</p>
-                            </a>
-                        </li>
-                    </ul> -->
+                    <a href="<?= base_url('') ?>" class="nav-link">
+                        <i class="nav-icon fas fa-child"></i>
+                        <p>
+                            Data kelahiran
+                        </p>
+                    </a>
+                    <a href="<?= base_url('') ?>" class="nav-link">
+                        <i class="nav-icon fas fa-ambulance"></i>
+                        <p>
+                            Data Kematian
+                        </p>
+                    </a>
+                    <a href="<?= base_url('') ?>" class="nav-link">
+                        <i class="nav-icon fas fa-suitcase"></i>
+                        <p>
+                            Data Pindah
+                        </p>
+                    </a>
                 </li>
+
+
+
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-envelope"></i>
