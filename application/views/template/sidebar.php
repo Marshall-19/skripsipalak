@@ -48,6 +48,7 @@
                         <i class="nav-icon fas fa-suitcase"></i>
                         <p>
                             Data Pindah
+
                         </p>
                     </a>
                 </li>
@@ -113,3 +114,12 @@
     </div>
     <!-- /.sidebar -->
 </aside>
+
+<?php
+if( $this->session->flashdata('pesan') == TRUE)
+{
+    echo "
+        <script>alert(".$this->session->flashdata('pesan').")</script>
+    ";
+}
+?>

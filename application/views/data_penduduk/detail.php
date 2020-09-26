@@ -8,7 +8,7 @@
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="<?= base_url('admin/J_batikan') ?>">Data Penduduk Jorong Batikan</a></li>
+                            <li class="breadcrumb-item"><a href="">Data Penduduk Jorong Batikan</a></li>
                             <li class="breadcrumb-item active">Detail Data Penduduk</li>
                         </ol>
                     </div><!-- /.col -->
