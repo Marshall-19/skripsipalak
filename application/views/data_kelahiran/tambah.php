@@ -32,7 +32,14 @@
                                 <!-- text input -->
                                 <div class="form-group">
                                     <label>NO. KK</label>
-                                    <input type="number" autofocus name="no_kk" class="form-control" placeholder="Nomor Kartu Keluarga" required>
+                                    <select name="no_kk" id="kk" class="select2 form-control" style="width:100%">
+                                        <option value="">--CARI KK</option>
+                                        <?php
+                                            foreach($kk as $kk):
+                                        ?>
+                                            <option value="<?= $kk->no_kk ?>"><?= $kk->no_kk ?></option>
+                                        <?php endforeach ?>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-sm-6">

@@ -15,8 +15,8 @@ class Kelahiran extends CI_Controller
 
   public function inputKelahiran()
   {
-
-    $this->template->utama('data_kelahiran/tambah');
+    $data['kk'] = $this->db->query('SELECT * FROM tb_kartu_keluarga')->result();
+    $this->template->utama('data_kelahiran/tambah',$data);
   }
 
   public function simpanKelahiran()
@@ -49,7 +49,7 @@ class Kelahiran extends CI_Controller
 
   public function editkelahiran($id)
   {
-
+    $data['kk'] = $this->db->query('SELECT * FROM tb_kartu_keluarga')->result();
     $data['kelahiran'] = $this->M_kelahiran->tampilEdit($id);
     $this->template->utama('data_kelahiran/edit', $data);
   }

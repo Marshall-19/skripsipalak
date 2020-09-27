@@ -15,8 +15,8 @@ class Kematian extends CI_Controller
 
     public function inputKematian()
     {
-
-        $this->template->utama('data_kematian/tambah');
+        $data['nik'] = $this->db->query("SELECT * FROM tb_penduduk")->result();
+        $this->template->utama('data_kematian/tambah',$data);
     }
 
     public function simpanKematian()

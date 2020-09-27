@@ -32,7 +32,14 @@
                                 <!-- text input -->
                                 <div class="form-group">
                                     <label>NIK</label>
-                                    <input type="number" autofocus name="nik" class="form-control" placeholder="Nomor Induk Keluarga" required>
+                                    <select name="nik" id="nik" style="width: 100%; height:100%" class="form-control select2">
+                                        <option value="">--CARI NIK</option>
+                                        <?php
+                                            foreach($nik as $nik):
+                                        ?>
+                                        <option value="<?= $nik->nik ?>"><?= $nik->nik ?></option>
+                                        <?php endforeach ?>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-sm-6">

@@ -28,8 +28,11 @@
 <script src="<?= base_url('assets/dist/js/sweetalert/sweetalert2.all.min.js') ?>"></script>
 <script src="<?= base_url('assets/dist/js/myscript.js') ?>"></script>
 <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 <script>
     $(document).ready( function () {
     $('#datatables').DataTable();
+    $('.select2').select2();
 } );
+
 </script>

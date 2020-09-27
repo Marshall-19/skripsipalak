@@ -15,6 +15,7 @@ class Penduduk extends CI_Controller
 
     public function inputPenduduk()
     {
+        $data['kk'] = $this->db->query('SELECT * FROM tb_kartu_keluarga')->result();
         $data['agama'] = $this->db->query("SELECT * FROM agama")->result();
         $this->template->utama('data_penduduk/tambah', $data);
     }
@@ -63,6 +64,7 @@ class Penduduk extends CI_Controller
 
     public function editPenduduk($id)
     {
+        $data['kk'] = $this->db->query('SELECT * FROM tb_kartu_keluarga')->result();
         $data['agama'] = $this->db->query("SELECT * FROM agama")->result();
         $data['penduduk'] = $this->M_penduduk->tampilEdit($id);
         $this->template->utama('data_penduduk/edit', $data);
