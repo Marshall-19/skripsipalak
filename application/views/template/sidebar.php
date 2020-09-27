@@ -20,25 +20,25 @@
                         </p>
                     </a>
 
-                    <a href="<?= base_url('') ?>" class="nav-link">
+                    <a href="<?= base_url('Penduduk') ?>" class="nav-link">
                         <i class="nav-icon fas fa-book"></i>
                         <p>
                             Data Penduduk
                         </p>
                     </a>
-                    <a href="<?= base_url('') ?>" class="nav-link">
+                    <a href="<?= base_url('Keluarga') ?>" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
                         <p>
                             Data Keluarga
                         </p>
                     </a>
-                    <a href="<?= base_url('') ?>" class="nav-link">
+                    <a href="<?= base_url('Kelahiran') ?>" class="nav-link">
                         <i class="nav-icon fas fa-child"></i>
                         <p>
                             Data kelahiran
                         </p>
                     </a>
-                    <a href="<?= base_url('') ?>" class="nav-link">
+                    <a href="<?= base_url('Kematian') ?>" class="nav-link">
                         <i class="nav-icon fas fa-ambulance"></i>
                         <p>
                             Data Kematian
@@ -116,10 +116,9 @@
 </aside>
 
 <?php
-if( $this->session->flashdata('pesan') == TRUE)
-{
+if ($this->session->flashdata('pesan') == TRUE) {
     echo "
-        <script>alert(".$this->session->flashdata('pesan').")</script>
+        <script>alert(" . $this->session->flashdata('pesan') . ")</script>
     ";
 }
 ?>
