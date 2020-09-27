@@ -36,7 +36,7 @@
                                     <div class="form-group">
                                         <input type="hidden" name="id_kematian" value="<?= $x->id_kematian ?>">
                                         <label>NIK</label>
-                                        <input type="number" autofocus name="nik" class="form-control" value="<?= $x->nik ?>" required>
+                                        <input type="number" readonly autofocus name="nik" class="form-control" value="<?= $x->nik ?>" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">

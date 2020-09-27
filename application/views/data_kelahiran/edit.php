@@ -35,7 +35,7 @@
                                     <!-- text input -->
                                     <div class="form-group">
                                         <label>NO. KK</label>
-                                        <input type="number" autofocus name="no_kk" class="form-control" value="<?= $x->no_kk ?>" required>
+                                        <input type="number" readonly autofocus name="no_kk" class="form-control" value="<?= $x->no_kk ?>" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
