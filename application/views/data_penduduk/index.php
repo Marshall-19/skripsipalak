@@ -92,7 +92,10 @@
                                 <td><?= $a->golongan_darah ?></td>
                                 <td><?= $a->pekerjaan ?></td>
                                 <td><?= $a->kewarganegaraan ?></td>
-                                <td><a href="<?= base_url('editpenduduk/'.$a->nik) ?>" class="btn btn-warning"><i class="fa fa-edit"></i></a></td>
+                                <td>
+                                    <a href="<?= base_url('editpenduduk/'.$a->nik) ?>" class="btn btn-warning"><i class="fa fa-edit"></i></a>
+                                    <a href="<?= base_url('hapuspenduduk/'.$a->nik) ?>" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                                </td>
                             </tr>
                             <?php endforeach ?>
                         </tbody>
