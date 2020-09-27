@@ -4,11 +4,11 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0 text-dark">Data Penduduk Jorong Batikan</h1>
+                        <h1 class="m-0 text-dark"></h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="<?= base_url('admin/J_batikan') ?>">Data Penduduk Jorong Batikan</a></li>
+                            <li class="breadcrumb-item"><a href="<?= base_url('Penduduk') ?>">Data Penduduk </a></li>
                             <li class="breadcrumb-item active">Tambah Data Penduduk</li>
                         </ol>
                     </div>
@@ -118,9 +118,8 @@
                                     <label>STATUS PERKAWINAN</label>
                                     <select name="stkawin" class="form-control">
                                         <option>-- Pilih Status Perkawinan</option>
-                                        
                                         <option value="Sudah Menikah">Sudah Menikah</option>
-                                        <option value="Lajang">Lajang</option>
+                                        <option value="Belum Menikah">Belum Menikah</option>
                                     </select>
                                 </div>
                             </div>
@@ -144,7 +143,7 @@
                                     <input type="text" name="jorong" class="form-control" placeholder="Jorong" required>
                                 </div>
                             </div>
-                            
+
                             <div class="col-sm-6">
                                 <!-- select -->
                                 <div class="form-group">
@@ -180,7 +179,7 @@
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <div class="card-footer">
-                                        <a href="<?= base_url() . 'admin/J_batikan/'; ?>" class="btn btn-danger">Batal</a>
+                                        <a href="<?= base_url('Penduduk') ?>" class="btn btn-danger">Batal</a>
                                         <button type="submit" class="btn btn-primary">Simpan</button>
                                     </div>
                                 </div>
