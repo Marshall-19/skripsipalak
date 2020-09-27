@@ -74,23 +74,28 @@
                             <?php
                             foreach ($penduduk as $i => $a) :
                             ?>
-                                <tr>
-                                    <td><?= $a->nik ?></td>
-                                    <td><?= $a->nama ?></td>
-                                    <td><?= $a->tempat_lahir ?></td>
-                                    <td><?= $a->tanggal_lahir ?></td>
-                                    <td><?= $a->jenis_kelamin ?></td>
-                                    <td><?= $a->alamat ?></td>
-                                    <td><?= $a->jorong ?></td>
-                                    <td><?= $a->nagari ?></td>
-                                    <td><?= $a->kecamatan ?></td>
-                                    <td><?= $a->agama ?></td>
-                                    <td><?= $a->status_perkawinan ?></td>
-                                    <td><?= $a->golongan_darah ?></td>
-                                    <td><?= $a->pekerjaan ?></td>
-                                    <td><?= $a->kewarganegaraan ?></td>
-                                    <td><a href="<?= base_url('editpenduduk/' . $a->nik) ?>" class="btn btn-warning"><i class="fa fa-edit"></i></a></td>
-                                </tr>
+
+                            <tr>
+                                <td><?= $a->nik ?></td>
+                                <td><?= $a->nama ?></td>
+                                <td><?= $a->tempat_lahir ?></td>
+                                <td><?= $a->tanggal_lahir ?></td>
+                                <td><?= $a->jenis_kelamin ?></td>
+                                <td><?= $a->alamat ?></td>
+                                <td><?= $a->jorong ?></td>
+                                <td><?= $a->nagari ?></td>
+                                <td><?= $a->kecamatan ?></td>
+                                <td><?= $a->agama ?></td>
+                                <td><?= $a->status_perkawinan ?></td>
+                                <td><?= $a->golongan_darah ?></td>
+                                <td><?= $a->pekerjaan ?></td>
+                                <td><?= $a->kewarganegaraan ?></td>
+                                <td>
+                                    <a href="<?= base_url('editpenduduk/'.$a->nik) ?>" class="btn btn-warning"><i class="fa fa-edit"></i></a>
+                                    <a href="<?= base_url('hapuspenduduk/'.$a->nik) ?>" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                                </td>
+                            </tr>
+
                             <?php endforeach ?>
                         </tbody>
                     </table>

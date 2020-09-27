@@ -68,6 +68,13 @@ class Penduduk extends CI_Controller
         $this->template->utama('data_penduduk/edit', $data);
     }
 
+    public function hapusPenduduk($id)
+    {
+        $data['penduduk'] = $this->M_penduduk->hapus($id);
+        $this->session->set_flashdata('pesan','Data Berhasil Dihapus');
+        redirect('penduduk');
+    }
+
     public function updatePenduduk()
     {
         $data = array(

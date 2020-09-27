@@ -4,11 +4,13 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
+
                         <h1 class="m-0 text-dark"></h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="<?= base_url('Penduduk') ?>">Data Penduduk</a></li>
+
                             <li class="breadcrumb-item active">Edit Data Penduduk</li>
                         </ol>
                     </div><!-- /.col -->
@@ -20,7 +22,6 @@
     <section class="content">
         <?php
         foreach ($penduduk as $x) {
-            // var_dump($x);
         ?>
             <div class="col-md-12">
                 <!-- general form elements disabled -->

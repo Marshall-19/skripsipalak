@@ -26,7 +26,7 @@
           <!-- small box -->
           <div class="small-box bg-danger">
             <div class="inner">
-              <h3></h3>
+              <h3>0</h3>
 
               <p>JORONG PASAR</p>
             </div>
@@ -97,7 +97,7 @@
           <!-- small box -->
           <div class="small-box bg-gray ">
             <div class="inner">
-              <h3></h3>
+              <h3>0</h3>
               <p>JORONG KAPALO KOTO</p>
             </div>
             <div class="icon">
@@ -110,7 +110,7 @@
           <!-- small box -->
           <div class="small-box bg-danger ">
             <div class="inner">
-              <h3></h3>
+              <h3>0</h3>
               <p>ADMINISTRATOR</p>
             </div>
             <div class="icon">
@@ -123,7 +123,7 @@
           <!-- small box -->
           <div class="small-box bg-success ">
             <div class="inner">
-              <h3></h3>
+              <h3>0</h3>
               <p>Surat Kelahiran</p>
             </div>
             <div class="icon">
@@ -136,7 +136,7 @@
           <!-- small box -->
           <div class="small-box bg-blue ">
             <div class="inner">
-              <h3></h3>
+              <h3>0</h3>
               <p>Surat Kematian</p>
             </div>
             <div class="icon">

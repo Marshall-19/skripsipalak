@@ -21,4 +21,9 @@ class M_penduduk extends CI_Model
     {
         return $this->db->where($where)->update('tb_penduduk', $data);
     }
+
+    public function hapus($id)
+    {
+        return $this->db->query("DELETE FROM tb_penduduk WHERE nik = '$id'");
+    }
 }
